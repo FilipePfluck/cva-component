@@ -1,5 +1,5 @@
 import { ComponentProps, ReactHTML, createElement } from 'react'
-import { VariantProps as CVAVariantProps, cva } from 'class-variance-authority'
+import { cva } from 'class-variance-authority'
 
 interface Variants {
   [k: string]: {
@@ -47,8 +47,6 @@ export const CVAComponent = <E extends keyof ReactHTML, V extends Variants>(
   }: ComponentPropsWithVariants<NonNullable<typeof requestVariants>, E>) => {
     const mergedVariants = { ...defaultVariants, ...variants }
     const cvaClassName = createClassname({ className, ...mergedVariants })
-
-    console.log({ cvaClassName })
 
     return createElement(
       element,
