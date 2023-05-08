@@ -64,6 +64,7 @@ export const selector = (selector: string, classes: string) => {
   const classesArray = classes.split(' ')
   const classesWithSelector = classesArray
     .map((className) => {
+      if (!className) return ''
       return selector + className
     })
     .join(' ')
@@ -75,6 +76,7 @@ export const hover = (classes: string) => {
   const classesArray = classes.split(' ')
   const classesWithSelector = classesArray
     .map((className) => {
+      if (!className) return ''
       return 'hover:' + className
     })
     .join(' ')
@@ -86,6 +88,7 @@ export const focus = (classes: string) => {
   const classesArray = classes.split(' ')
   const classesWithSelector = classesArray
     .map((className) => {
+      if (!className) return ''
       return 'focus:' + className
     })
     .join(' ')
@@ -97,6 +100,7 @@ export const focusWithin = (classes: string) => {
   const classesArray = classes.split(' ')
   const classesWithSelector = classesArray
     .map((className) => {
+      if (!className) return ''
       return 'focus-within:' + className
     })
     .join(' ')
@@ -108,6 +112,7 @@ export const focusVisible = (classes: string) => {
   const classesArray = classes.split(' ')
   const classesWithSelector = classesArray
     .map((className) => {
+      if (!className) return ''
       return 'focus-visible:' + className
     })
     .join(' ')
@@ -119,6 +124,7 @@ export const active = (classes: string) => {
   const classesArray = classes.split(' ')
   const classesWithSelector = classesArray
     .map((className) => {
+      if (!className) return ''
       return 'active:' + className
     })
     .join(' ')
@@ -130,6 +136,7 @@ export const first = (classes: string) => {
   const classesArray = classes.split(' ')
   const classesWithSelector = classesArray
     .map((className) => {
+      if (!className) return ''
       return 'first:' + className
     })
     .join(' ')
@@ -141,6 +148,7 @@ export const last = (classes: string) => {
   const classesArray = classes.split(' ')
   const classesWithSelector = classesArray
     .map((className) => {
+      if (!className) return ''
       return 'last:' + className
     })
     .join(' ')
@@ -152,6 +160,7 @@ export const only = (classes: string) => {
   const classesArray = classes.split(' ')
   const classesWithSelector = classesArray
     .map((className) => {
+      if (!className) return ''
       return 'only:' + className
     })
     .join(' ')
@@ -163,6 +172,7 @@ export const odd = (classes: string) => {
   const classesArray = classes.split(' ')
   const classesWithSelector = classesArray
     .map((className) => {
+      if (!className) return ''
       return 'odd:' + className
     })
     .join(' ')
@@ -174,6 +184,7 @@ export const even = (classes: string) => {
   const classesArray = classes.split(' ')
   const classesWithSelector = classesArray
     .map((className) => {
+      if (!className) return ''
       return 'even:' + className
     })
     .join(' ')
@@ -185,6 +196,7 @@ export const disabled = (classes: string) => {
   const classesArray = classes.split(' ')
   const classesWithSelector = classesArray
     .map((className) => {
+      if (!className) return ''
       return 'disabled:' + className
     })
     .join(' ')
@@ -196,6 +208,7 @@ export const enabled = (classes: string) => {
   const classesArray = classes.split(' ')
   const classesWithSelector = classesArray
     .map((className) => {
+      if (!className) return ''
       return 'enabled:' + className
     })
     .join(' ')
@@ -207,6 +220,7 @@ export const required = (classes: string) => {
   const classesArray = classes.split(' ')
   const classesWithSelector = classesArray
     .map((className) => {
+      if (!className) return ''
       return 'required:' + className
     })
     .join(' ')
@@ -218,6 +232,7 @@ export const valid = (classes: string) => {
   const classesArray = classes.split(' ')
   const classesWithSelector = classesArray
     .map((className) => {
+      if (!className) return ''
       return 'valid:' + className
     })
     .join(' ')
@@ -229,6 +244,7 @@ export const invalid = (classes: string) => {
   const classesArray = classes.split(' ')
   const classesWithSelector = classesArray
     .map((className) => {
+      if (!className) return ''
       return 'invalid:' + className
     })
     .join(' ')
@@ -240,6 +256,7 @@ export const autofill = (classes: string) => {
   const classesArray = classes.split(' ')
   const classesWithSelector = classesArray
     .map((className) => {
+      if (!className) return ''
       return 'autofill:' + className
     })
     .join(' ')
@@ -251,6 +268,7 @@ export const before = (classes: string) => {
   const classesArray = classes.split(' ')
   const classesWithSelector = classesArray
     .map((className) => {
+      if (!className) return ''
       return 'before:' + className
     })
     .join(' ')
@@ -262,6 +280,7 @@ export const after = (classes: string) => {
   const classesArray = classes.split(' ')
   const classesWithSelector = classesArray
     .map((className) => {
+      if (!className) return ''
       return 'after:' + className
     })
     .join(' ')
@@ -273,6 +292,7 @@ export const placeholder = (classes: string) => {
   const classesArray = classes.split(' ')
   const classesWithSelector = classesArray
     .map((className) => {
+      if (!className) return ''
       return 'placeholder:' + className
     })
     .join(' ')
@@ -284,6 +304,7 @@ export const dark = (classes: string) => {
   const classesArray = classes.split(' ')
   const classesWithSelector = classesArray
     .map((className) => {
+      if (!className) return ''
       return 'dark:' + className
     })
     .join(' ')
