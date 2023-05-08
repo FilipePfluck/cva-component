@@ -90,11 +90,13 @@ I added functions for the selectors I use the most, like hover, before, etc. But
 
 Add this to your settings.json file:
 
+```
 "tailwindCSS.experimental.classRegex": [
     "cva\\(([^)]*)\\)",
     "[\"'`]([^\"'`]*).*?[\"'`]",
     "CVAComponent\\s*\\(\\s*[`'\"]([a-zA-Z0-9\\s\\-]+)[`'\"]\\s*,\\s*{\\s*(?:base:\\s*([`'\"][^`'\\\"]*[`'\"])[,\\s]*)?\\s*variants:\\s*{(?:\\s*[a-zA-Z0-9_]+\\s*:\\s*{\\s*(?:[a-zA-Z0-9_]+\\s*:\\s*([`'\"][^`'\\\"]*[`'\"])[,\\s]*)*}\\s*,?\\s*)*}\\s*\\)"
   ]
+```
 
 ## License
 
